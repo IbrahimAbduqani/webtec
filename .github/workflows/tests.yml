@@ -4,8 +4,8 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
-  uses:
-    - uses: actions/checkout@v3
+  steps:
+    - runs-on: actions/checkout@v3
     - name: Set up JDK 17
       uses: actions/setup-java@17.0.1
       with:
