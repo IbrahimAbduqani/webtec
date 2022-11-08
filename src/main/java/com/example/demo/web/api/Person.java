@@ -1,4 +1,4 @@
-package com.example.demo.web;
+package com.example.demo.web.api;
 
 public class Person {
 
@@ -13,6 +13,7 @@ public class Person {
         this.lastName = lastName;
         this.vaccinated = vaccinated;
     }
+
 
     public long getId() {
         return id;

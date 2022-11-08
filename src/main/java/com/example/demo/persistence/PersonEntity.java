@@ -19,8 +19,18 @@ public class PersonEntity {
     @Column(name = "is_vaccinated")
     private Boolean vaccinated;
 
-    public PersonEntity(Long id, String firstname, String lastname, Boolean vaccinated) {
-        this.id = id;
+    @Column(name = "test")
+    private String testColumn;
+
+    public String getTestColumn() {
+        return testColumn;
+    }
+
+    public void setTestColumn(String testColumn) {
+        this.testColumn = testColumn;
+    }
+
+    public PersonEntity(String firstname, String lastname, Boolean vaccinated) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.vaccinated = vaccinated;
